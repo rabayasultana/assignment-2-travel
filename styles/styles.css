@@ -15,14 +15,22 @@
   margin: 100px auto;
 }
 
+
+.main-title-container {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .main-title {
   color: #131318;
   font-size: 32px;
   font-weight: 800;
 }
 
-.main-title .travels{
-  color: #FF5400;
+.main-title .travels {
+  color: #ff5400;
 }
 
 .description {
@@ -49,6 +57,39 @@
   /* text-align: center; */
   font-size: 40px;
   font-weight: 800;
+}
+
+/* nav related styles */
+.nav-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 200px;
+  margin: 50px auto;
+}
+
+.nav-container .navbar .nav-list{
+  display: flex;
+  list-style: none;
+  gap: 44px;
+}
+
+.nav-container .navbar .nav-list .orange{
+  color: #FF5400;
+}
+
+.nav-container .navbar .nav-list a{
+  text-decoration: none;
+  color: #424247;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+}
+
+.nav-container .navbar .hamburger-menu{
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
 }
 
 /* banner section styles */
@@ -222,10 +263,6 @@ footer {
 }
 
 .footer-title {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  gap: 16px;
   padding-top: 110px;
   padding-bottom: 15px;
 }
@@ -251,6 +288,59 @@ footer .small small {
 
 footer hr {
   width: 70%;
+}
+
+/* newsletter section */
+
+.news-letter {
+  display: flex;
+  gap: 24px;
+}
+.news-letter .text {
+  padding: 40px;
+  border-radius: 16px;
+border: 1px solid #FF5400;
+}
+
+.news-letter .container-title {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.news-letter .description {
+  color: #5a5a5d;
+  margin-bottom: 20px;
+}
+.news-letter  .signup-form {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.news-letter .signup-form .sign-up {
+  width: 100%;
+  border: none;
+}
+
+.news-letter .signup-form input {
+  color: rgba(19, 19, 24, 0.3);
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  height: 52px;
+  padding-left: 16px;
+}
+
+.news-letter .news-img {
+  position: relative;
+}
+
+.news-letter .news-img .box{
+  position: absolute;
+  bottom: 5px;
+  right: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -283,13 +373,16 @@ footer hr {
   }
 
   /* popular tours section */
-  .popular-tours {
+  .popular-tours ,
+  .news-letter {
+    display: flex;
     flex-direction: column;
     gap: 24px;
     height: auto;
   }
 
-  .popular-tours .popular-tour-img img {
+  .popular-tours .popular-tour-img img ,
+  .news-letter .news-img .news-img1{
     width: 100%;
   }
 
@@ -308,7 +401,7 @@ footer hr {
   }
 
   .destination .destination-img img {
-    width: 100%;
+    width:335px;
     height: 176px;
   }
 
@@ -316,11 +409,32 @@ footer hr {
     width: 100%;
   }
 
-  /* footer */
-  footer .main-title{
+  .news-letter .news-img .box{
+    width: 60%;
+    height: 40%;
+  }
+
+  .main-title {
     font-size: 22px;
   }
-  footer .description{
-    margin:10px 30px;
+
+  /* footer */
+  footer .description {
+    margin: 10px 30px;
   }
+
+
+.container{
+  gap: 100px;
+}
+  .nav-container .navbar .hamburger-menu {
+    display: block;
+  }
+
+  .nav-container .navbar .nav-list {
+    display: none;
+    flex-direction: column;
+  }
+
+
 }
