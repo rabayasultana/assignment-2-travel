@@ -2,16 +2,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:wght@400;700;800&display=swap");
 
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   /* font-family: 'Inter', sans-serif; */
   font-family: "Mulish", sans-serif;
+  max-width: 1440px;
 }
 
 .container {
   width: 82%;
   max-width: 1170px;
   margin: 100px auto;
+}
+
+.main-title {
+  color: #131318;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.main-title .travels{
+  color: #FF5400;
 }
 
 .description {
@@ -169,18 +180,19 @@
 }
 
 .choose .container-title,
-.choose .description, .choose .card img {
+.choose .description,
+.choose .card img {
   margin: 24px;
 }
 
-.choose .card-div1{
+.choose .card-div1 {
   display: flex;
   justify-content: space-between;
   gap: 24px;
   margin-bottom: 24px;
 }
 
-.choose .card-div2 .card{
+.choose .card-div2 .card {
   margin: 0 auto;
 }
 
@@ -192,9 +204,9 @@
   background: rgba(251, 181, 99, 0.05);
 }
 
-.choose .card-div1 .sky-blue{
-border: 1px solid rgba(41, 206, 246, 0.20);
-background: rgba(41, 206, 246, 0.05);
+.choose .card-div1 .sky-blue {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
 }
 .choose .card .container-title {
   font-size: 24px;
@@ -202,6 +214,45 @@ background: rgba(41, 206, 246, 0.05);
 .choose .card .description {
   color: #5a5a5d;
 }
+
+/* footer */
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  text-align: center;
+}
+
+.footer-title {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 110px;
+  padding-bottom: 15px;
+}
+
+footer .description {
+  margin: 0 400px;
+}
+
+footer .icons {
+  margin: 32px auto;
+}
+
+footer .small {
+  margin-top: 20px;
+  padding-bottom: 110px;
+}
+
+footer .small small {
+  font-family: "Inter", sans-serif;
+  margin-top: 20px;
+  padding-bottom: 110px;
+}
+
+footer hr {
+  width: 70%;
+}
+
 @media screen and (max-width: 600px) {
   .container-title {
     font-size: 20px;
@@ -263,5 +314,13 @@ background: rgba(41, 206, 246, 0.05);
 
   .choose .card {
     width: 100%;
+  }
+
+  /* footer */
+  footer .main-title{
+    font-size: 22px;
+  }
+  footer .description{
+    margin:10px 30px;
   }
 }
