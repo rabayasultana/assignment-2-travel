@@ -267,40 +267,33 @@
   color: #5a5a5d;
 }
 
-/* footer */
-footer {
-  background: rgba(19, 19, 24, 0.05);
+/* feedback section */
+
+.customer-feedback{
   text-align: center;
 }
 
-.footer-title {
-  padding-top: 110px;
-  padding-bottom: 15px;
+.customer-feedback .container-title , .customer-feedback .description{
+          margin-bottom:24px;
+}
+.customer-feedback form{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 20px;
+  padding: 10px;
+  border: 1px solid rgba(251, 181, 99, 0.2);
+  background: rgba(251, 181, 99, 0.05);
 }
 
-footer .description {
-  margin: 0 400px;
+.customer-feedback form input{
+  margin: 20px auto;
 }
 
-footer .icons {
-  margin: 32px auto;
+.customer-feedback form #image{
+  margin-top: 5px;
+  padding-left: 40px;
 }
-
-footer .small {
-  margin-top: 20px;
-  padding-bottom: 110px;
-}
-
-footer .small small {
-  font-family: "Inter", sans-serif;
-  margin-top: 20px;
-  padding-bottom: 110px;
-}
-
-footer hr {
-  width: 70%;
-}
-
 /* newsletter section */
 
 .news-letter {
@@ -366,6 +359,42 @@ footer hr {
   font-size: 24px;
   font-weight: 400;
 }
+
+/* footer */
+footer {
+  background: rgba(19, 19, 24, 0.05);
+  text-align: center;
+}
+
+.footer-title {
+  padding-top: 110px;
+  padding-bottom: 15px;
+}
+
+footer .description {
+  margin: 0 400px;
+}
+
+footer .icons {
+  margin: 32px auto;
+}
+
+footer .small {
+  margin-top: 20px;
+  padding-bottom: 110px;
+}
+
+footer .small small {
+  font-family: "Inter", sans-serif;
+  margin-top: 20px;
+  padding-bottom: 110px;
+}
+
+footer hr {
+  width: 70%;
+}
+
+
 @media screen and (max-width: 600px) {
   .container-title {
     font-size: 20px;
