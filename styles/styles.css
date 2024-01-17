@@ -6,6 +6,7 @@
   padding: 0;
   /* font-family: 'Inter', sans-serif; */
   font-family: "Mulish", sans-serif;
+  /* width: 100%; */
   max-width: 1440px;
 }
 
@@ -394,7 +395,7 @@ footer hr {
   width: 70%;
 }
 
-
+/* Media query */
 @media screen and (max-width: 600px) {
   .container-title {
     font-size: 20px;
@@ -490,4 +491,101 @@ footer hr {
     font-size: 20px;
     font-weight: 800;
   }
+}
+
+
+
+@media screen and (min-width: 601px) and (max-width: 992px){
+
+  
+  /* banner related */
+
+  .banner .banner-title {
+    font-size: 28px;
+    padding-top: 45px;
+  }
+
+  .banner .description {
+    margin: 15px;
+  }
+
+  .banner .form {
+    width: fit-content;
+    margin: 10px auto;
+  }
+
+  .banner .form form,
+  .news-letter {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+
+  .popular-tours {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: auto;
+  }
+
+  .popular-tours .popular-tour-img img,
+  .news-letter .news-img .news-img1 {
+    width: 100%;
+  }
+
+
+  .destination .description {
+    margin: 20px 20px;
+  }
+
+  .destination .destination-img .destination-img1,
+  .destination .destination-img .destination-img2,
+  .destination .destination-img .destination-img3,
+  .choose .card-div1
+  {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 16px; 
+  }
+
+  .destination .destination-img img {
+    width: 500px;
+    /* height: 176px; */
+  }
+
+  .choose .card {
+    width: 100%;
+  }
+
+  .news-letter .news-img .box {
+    width: 60%;
+    height: 40%;
+  }
+
+  .main-title {
+    font-size: 22px;
+  }
+
+  /* footer */
+  footer .description {
+    margin: 10px 30px;
+  }
+
+  .container {
+    gap: 100px;
+  }
+  .nav-container .navbar .hamburger-menu {
+    display: block;
+  }
+
+  .nav-container .navbar .nav-list {
+    display: none;
+    flex-direction: column;
+  }
+
+  .news-letter .text-box {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
 }
